@@ -2,6 +2,52 @@
 This is a REST API build with Spring Boot. For Db it uses MySql. It is for learning purposes and it can be used in a hotel management system.
 It is work in progress...
 
+# Tools
+- For running it is required you to have:
+
+- Maven as your build tool
+
+- JDK 1.8+
+
+- MySql
+
+
+# Dependencies
+
+- It is required you to have these dependencies:
+
+- Spring Data JPA
+
+- MySql Driver
+
+- Spring WEB
+
+# Getting Started
+
+Clone The Project `https://github.com/FreskimElmazi/SpringBoot-Hotel-REST-API.git`
+
+# Configure the Database
+
+- Create a database in MySql
+- Add credentials to `/src/main/resources/application.properties`.
+
+```
+## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring.datasource.url = jdbc:mysql://localhost:3306/name_of_your_database_here?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+spring.datasource.username = root
+spring.datasource.password =
+
+
+## Hibernate Properties
+# The SQL dialect makes Hibernate generate better SQL for the chosen database
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+
+# Hibernate ddl auto (create, create-drop, validate, update)
+spring.jpa.hibernate.ddl-auto = update
+```
+
+- Install the dependencies and run the application
+
 # Endpoints
 
 -For Room Entity
