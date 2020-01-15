@@ -1,5 +1,6 @@
 # SpringBoot-Hotel-REST-API
-This is a REST API for hotels
+This is a REST API build with Spring Boot. For Db it uses MySql. It is for learning purposes and it can be used in a hotel management system.
+It is work in progress...
 
 # Endpoints
 
